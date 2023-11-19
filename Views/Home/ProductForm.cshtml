@@ -1,0 +1,41 @@
+﻿@model ChanceryStoreMVC.Models.Product
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ProductForm</title>
+</head>
+<body>
+    <form asp-action="ProductForm" method="post">
+        <p>
+            <label asp-for="Name">Name:</label>
+            <input asp-for="Name" />
+        </p>
+        <p>
+            <label asp-for="Price">Price:</label>
+            <input asp-for="Price" />
+        </p>
+        <p>
+            <label asp-for="Amount">Amount:</label>
+            <input asp-for="Amount" />
+        </p>
+        <p>
+            <label>Group:</label>
+            <select @*asp-for="Group"*@>
+                <option>Блокноты</option>
+                <option>Карандаши</option>
+                <option>Краски</option>
+            </select>
+        </p>
+        <button type="submit">Add Product</button>
+    </form>
+
+</body>
+</html>
+
+

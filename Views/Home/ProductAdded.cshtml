@@ -1,0 +1,20 @@
+﻿@model ChanceryStoreMVC.Models.Product
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ProductForm</title>
+</head>
+<body>
+    <p>@Model.Name добавлен в корзину, теперь их @Model.Amount </p>
+    @Html.ActionLink("Main page", "Index", "Home");
+    <br />
+    @Html.ActionLink("List of contacts", "ProductsList", "Home");
+</body>
+</html>
+

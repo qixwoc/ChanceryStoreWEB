@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div>
+        <h3>Форма оформления покупки</h3>
+        <form method="post" action="">
+        <input type="hidden" value="ViewBag.ProductCode" name="ProductCode" />
+            <table>
+                <tr><td><p>Введите свое имя</p></td>
+                <td><input type="text" name="Client.FirstName"/></td>
+                </tr>
+                <tr>
+                    <td><p>Введите свою фамилию</p></td>
+                    <td><input type="text" name="Client.LastName" /></td>
+                </tr>
+                <tr><td><input id="btn" type="submit" value="Ок"/></td></tr>
+
+            </table>
+        
+        </form>
+    </div>
+

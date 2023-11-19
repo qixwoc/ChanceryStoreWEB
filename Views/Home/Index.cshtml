@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h3>Каталог</h3>
+    <div>
+        
+        <table>
+            <tr>
+                <td><p></p></td>
+                <td><p id="pcsm">Название</p></td>
+                <td><p id="pcsm">Цена</p></td>
+                <td><p id="pcsm">В наличие</p></td>
+            </tr>
+            @foreach (var p in ViewBag.Product)
+            { ViewBag.ImageData = string.Format("data:image/png;base64,{0}", Convert.ToBase64String(p.Image));
+        <tr id="trcs">
+            <td><img src="@ViewBag.ImageData" /></td>
+            <td><p id="pcs">@p.Name</p></td>
+            <td><p id="pcs">@p.Price руб.</p></td>
+
+            @if (p.Amount < 1)
+            {
+                <td><p id="pcs">Нет в наличие</p></td>
+                <td><p id="btn">Оставить заявку</p></td>
+            }
+
+            else
+            {<td><p id="pcs">@p.Amount</p></td>
+                <td><p id="btn"><a href="/Home/Buy/@p.Code">Купить</a></p></td>
+}
+        </tr>
+            }
+
+        </table>
+     
+    </div>
+

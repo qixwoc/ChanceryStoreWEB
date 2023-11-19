@@ -1,0 +1,107 @@
+﻿body {
+    font-size: 13px;
+    font-family: Century Gothic;
+    background: linear-gradient(#AAFFD5,#D3FFCD);
+
+}
+
+nav {
+    display: block;
+    background-color: rgba(252, 252, 252, 0.5);
+    padding: 2px;
+    border-radius:3px;
+
+    
+}
+
+h3 {
+    margin: 10px;
+    color: #67A185;
+    /*font-size:20px;*/
+
+    text-align:center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0px 40px 40px 40px;
+}
+
+table {
+    text-align: center;
+}
+
+img {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+#btn {
+    background-color: #67A185;
+    color: white;
+    padding:10px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+.menu {
+    padding-left: 10px;
+}
+
+    .menu ul {
+        list-style: none;
+    }
+
+    .menu li {
+        display: inline;
+        margin: 0px 20px 0px 0px
+    } 
+    
+
+    .menu a:hover {
+        color: gray;
+    }
+
+table {
+    vertical-align: middle;
+    text-align: left;
+}
+
+.header {
+    font-weight: bold;
+}
+
+td {
+    padding-right: 10px;
+    text-align: center;
+}
+
+input {
+    width: 150px;
+}
+
+p {
+    color: #2C5741;
+    text-align: center;
+}
+
+#pcs {
+    font-size: 11px;
+    color: #545454;
+    text-align: center;
+}
+
+#pcsm {
+  font-weight:bold;
+}
+
+
